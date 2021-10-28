@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <link rel="stylesheet" type="text/css" href="panel.css">
+</head>
+
+<body>
+
+    <img src="logo2.png" class="logo">
+    <h1>Wavy7</h1>
+    <div class="buttons">
+        <div class="create">CREATE</div>
+        <div class="btn delete">DELETE</div>
+        <div class="btn save">SAVE</div>
+    </div>
+    <div class="project-box">
+        <div class="project project-clone"><span class="project-clientname">Client Name</span> - <span class="project-projectname">Project
+        </span> <span class="project-indicator project-indicator-green"></span></div>
+        <div class="project"><span class="project-clientname">Client Name</span> - <span class="project-projectname">Project</span><span class="project-indicator project-indicator-green"></span></div>
+        <div class="project"><span class="project-clientname">Client Name</span> - <span class="project-projectname">Project</span><span class="project-indicator project-indicator-green"></span></div>
+        <div class="test"></div>
+    </div>
+    <div class="project-panel">
+        <div class="project-status-box">
+            <h3>Status</h3><br>
+            <div class="project-status-box-box project-status-box-red"></div>
+            <div class="project-status-box-box project-status-box-green"></div>
+        </div>
+        <div class="project-client">
+            <h4>Client Name</h4>
+            <input type="text" placeholder="John Doe" class="project-panel-input project-panel-input-clientname">
+            <div class="project-panel-edit project-panel-edit-clientname">edit</div>
+        </div>
+        <div class="project-client">
+            <h4>Project Name</h4>
+            <input type="text" placeholder="Backend Development" class="project-panel-input project-panel-input-projectname">
+            <div class="project-panel-edit project-panel-edit-projectname">edit</div>
+        </div>
+        <div class="project-client">
+            <h4>Price</h4>
+            <input type="text" placeholder="$99999" class="project-panel-input project-panel-input-price">
+            <div class="project-panel-edit project-panel-edit-price">edit</div>
+        </div>
+        <div class="project-client">
+            <h4>Progress</h4>
+            <input id="project-client-range" type="range" min="0" max="100" value="0" step="10">
+            <div class="project-panel-edit project-panel-edit-progress">0%</div>
+        </div>
+        <div class="project-client">
+            <h4>Description</h4>
+            <textarea placeholder="Enter description here" class="project-panel-input project-panel-input-description" maxlength="250"></textarea>
+            <div class="project-panel-edit project-panel-edit-description">edit</div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

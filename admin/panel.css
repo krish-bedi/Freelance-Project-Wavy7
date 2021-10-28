@@ -1,0 +1,231 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: #001733;
+    font-size: 62.5%;
+    font-family: "Gilroy-Medium", Arial;
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+    src: local("Gilroy-Light"),
+    url('Gilroy-Light.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: local("Gilroy-Medium"),
+    url('Gilroy-Medium.ttf') format("truetype");
+}
+
+.logo {
+    height: 3rem;
+    width: auto;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+h1 {
+    font-family: "Gilroy-Medium", Arial;
+    font-size: 1.5rem;
+    color: white;
+    float: right;
+    margin: 3rem;
+}
+
+.buttons {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+}
+
+.btn {
+    font-family: "Gilroy-Medium", Arial;
+    font-size: 1.5rem;
+    color: white;
+    background: #22B573;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease;
+    user-select: none;
+    margin-bottom: 3rem;
+}
+
+.create {
+    font-family: "Gilroy-Medium", Arial;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    color: white;
+    background: #22B573;
+    cursor: pointer;
+    transition: all .2s ease;
+    padding: .5rem 3rem;
+    
+}
+
+.create:hover {
+    background: #2b5f47;
+}
+
+.delete {
+    padding: .5rem 1.5rem;
+    background: #C1272D;
+}
+.delete:hover {
+    background: #801b1f;
+}
+.save {
+    padding: .5rem 1.5rem;
+}
+.save:hover {
+    background: #2b5f47;
+}
+
+.project-box {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.project {
+    font-family: inherit;
+    width: auto;
+    background: #004E9B;
+    padding: .5rem 3rem .5rem 2rem;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.project-focus {
+    background: #0085F2;
+}
+
+.project-indicator {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-bottom: .1rem;
+}
+
+.project-indicator-green {
+    background: #22B573;
+}
+
+.project-indicator-red {
+    background: #C1272D;
+}
+
+.project-panel {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.project-status-box h3 {
+    font-weight: 300;
+}
+
+.project-status-box-red {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #C1272D;
+    border-radius: 50%;
+    display: inline-block;
+    margin: .5rem 0rem .5rem .3rem;
+}
+
+.project-status-box-green {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #22B573;
+    border-radius: 50%;
+    display: inline-block;
+    margin: .5rem 2rem;
+}
+
+.project-client {
+    margin-top: 2rem;
+}
+
+.project-client input[type="text"] {
+    background: #003C77;
+    border: none;
+    padding: .3rem 1rem;
+    width: 13rem;
+    margin-top: 1rem;
+    color: white;
+    font-family: "Gilroy-Medium", Arial;
+    font-size: 1rem;
+}
+
+.project-client input[type="text"]:placeholder {
+    padding: .3rem 1rem;
+    font-family: "Gilroy-Medium", Arial;
+    font-size: 1rem;
+}
+
+.project-panel-edit {
+    font-size: .7rem;
+    background: #003C77;
+    padding: .3rem 1rem;
+    margin-left: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.project-panel-edit:hover {
+    background: #2e7fd0;
+}
+
+.project-panel h4 {
+    font-size: 1rem;
+}
+
+input[type="range"] {
+    margin-top: 1rem;
+}
+
+.project-status-box-box {
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.project-status-box-box:hover {
+    transform: translateY(-.2rem);
+}
+
+.project-panel textarea {
+    background: #003C77;
+    border: none;
+    color: white;
+    font-family: "Gilroy-Medium", Arial;
+    font-size: 1rem;
+    width: 20rem;
+    height: 7rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}

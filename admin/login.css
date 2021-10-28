@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: #001733;
+    font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: local("Gilroy-Light"),
+  url('Gilroy-Light.ttf')
+  format("truetype");
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: local("Gilroy-Medium"),
+  url('Gilroy-Medium.ttf')
+  format("truetype");
+}
+
+.logo {
+    height: 4rem;
+    width: auto;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+h1 {
+    font-family: "Gilroy-Medium", Arial;
+    font-size: 1.5rem;
+    color: white;
+    float: right;
+    margin: 3rem;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="email"] {
+    display: block;
+    margin: 3rem;
+    font-family: "Gilroy-Medium", Arial;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+}
+input[type="email"]:placeholder {
+    color: black;
+}
+input[type="password"]:placeholder {
+    color: black;
+}
+input[type="password"] {
+    display: block;
+    margin: 3rem;
+    font-family: "Gilroy-Medium", Arial;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+}
+input[type="submit"] {
+    display: block;
+    margin: 3rem auto;
+    border: none;
+    background: #22B573;
+    color: white;
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
